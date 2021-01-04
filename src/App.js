@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const Login = lazy(() => import('./pages/login'))
+const Register = lazy(() => import('./pages/register'))
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Suspense fallback={<Loading />}>
         <Switch>
           <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
         </Switch>
       </Suspense>
     </Router>
