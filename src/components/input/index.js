@@ -20,6 +20,7 @@ export default function Input({ type, placeholder, value, onChange }) {
 }
 
 Input.propType = {
+  type: PropTypes.string,
   placeholder: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func
